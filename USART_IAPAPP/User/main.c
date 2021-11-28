@@ -8,6 +8,8 @@ int main(void){
 	SCB->VTOR = FLASH_BASE | 0x10000;
 	KEY_Config();
 	#if USART_ECO
+	init_led();
+	LED_GREEN;
 	usart_init();
 	USART_SendString(DEBUG_USARTx, "这是串口回显\n");
 	#else
@@ -54,7 +56,7 @@ int main(void){
 				LED_GREEN;
 				printf("开始软件复位!!\n");
 				SCB->AIRCR =0X05FA0000|(u32)0x04;
-			  printf("软件复位结束!!\n");
+			    printf("软件复位结束!!\n");
 				break;
 			default:
 				break;
