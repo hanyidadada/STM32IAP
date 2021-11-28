@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}\\Libraries\\CMSIS\\CM3\\CoreSupport",
+                "${workspaceFolder}\\Libraries\\CMSIS\\CM3\\DeviceSupport\\ST\\STM32F10x",
+                "${workspaceFolder}\\Libraries\\STM32F10x_StdPeriph_Driver\\inc",
+                "${workspaceFolder}\\User"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
